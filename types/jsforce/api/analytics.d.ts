@@ -22,7 +22,7 @@ export class Dashboard {
 export class ReportInstance {
     constructor(report: Report, id: string);
 
-    retrieve(callback: Callback<ReportResult>): Promise<ReportResult>;
+    retrieve(callback?: Callback<ReportResult>): Promise<ReportResult>;
 }
 
 export class Report {
